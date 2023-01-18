@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Spotify</title>
+</head>
+
+<body>
+    
+    <nav>
+        <ul>
+            <li class="Brand"><img src="logo.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songlist">
+            <h1 class="hedname"><img src="5YPk.gif">Daily Mix 1</h1>
+            <div class="songItemcontainer">
+                <div class="songItem">
+                    <img src="logo.png" alt="1">
+                    <span class="songName">Night Changes</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="0" class="far songItemplay fas fa-1x fa-play-circle"></i></span></span>
+    
+                </div>
+                <div class="songItem">
+                    <img src="logo.png" alt="1">
+                    <span class="songName">Closer</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="1" class="far songItemplay fas fa-1x fa-play-circle"></i></span></span>
+    
+                </div>
+                <div class="songItem">
+                    <img src="logo.png" alt="1">
+                    <span class="songName">Naikhartra</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="2" class="far songItemplay fas fa-1x fa-play-circle"></i></span></span>
+    
+                </div>
+                <div class="songItem">
+                    <img src="logo.png" alt="1">
+                    <span class="songName">I Can Fly</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="3" class="far songItemplay fas fa-1x fa-play-circle"></i></span></span>
+    
+                </div>
+                <div class="songItem">
+                    <img src="logo.png" alt="1">
+                    <span class="songName">Stell My Girl</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="4" class="far songItemplay fas fa-1x fa-play-circle"></i></span></span>
+    
+                </div>
+                <div class="songItem">
+                    <img src="logo.png" alt="1">
+                    <span class="songName">Dark Side</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="5" class="far songItemplay fas fa-1x fa-play-circle"></i></span></span>
+    
+                </div>
+            </div>
+        <div class="songbanner"></div>
+      </div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myprogressbar" min="0" value="0" max="100" class="mybar">
+        <div class="icons">
+            <!--fontawsome icone-->
+            <div class="pre_track">
+                <i class="fas fa-2x fa-solid fa-backward-step" id="previous"></i>
+            </div>
+            <div class="play_track">
+                <i class="fas fa-3x fa-play-circle" id="masterPlay"></i>
+            </div>
+            <div class="next_track">
+                <i class="fas fa-2x fa-solid fa-forward-step" id="next"></i>
+            </div>
+        </div>
+        <div class="songinfo">
+            <img src="Gifts/7d20.gif" width="52px" alt="" id="gift"> <span class="name" id="masterSongname">Night Changes</span> 
+        </div>
+
+        <!-- Define the section for displaying the volume slider-->
+	<div class="slider_container">
+        <i class="fa fa-volume-down"></i>
+        <input type="range" min="1" max="100"
+            value="99" class="volume_slider" onchange="setVolume()">
+        <i class="fa fa-volume-up"></i>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+    <script src="https://kit.fontawesome.com/671857d763.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
